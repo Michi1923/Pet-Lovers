@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad</title>
+
+    <link rel="shortcut icon" href="C:\Users\Michelle\Desktop\Pet Lovers\imagenes\paw_3736794.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css">
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<style>
+    .card {
+    border: 1px solid #ddd; /* Borde de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen automático en los laterales */
+    max-width: 800px; /* Ancho máximo de la tarjeta */
+    text-align: center; /* Centra el texto */
+}
+
+.card-body {
+    color: #fff; /* Color del texto dentro de la tarjeta */
+}
+
+.card-text {
+    color: #fff; /* Asegura que el texto sea blanco */
+}
+.text-center {
+    text-align: center; /* Centra el texto y los elementos inline dentro del contenedor */
+}
+
+.btn-primary {
+    display: inline-block; /* Asegura que el botón sea un elemento en línea para centrado */
+    margin: 0 auto; /* Ajusta el margen automático en los laterales */
+}
+</style>
+
+<body>
+    <div id="about-card" class="about-card hidden">
+        <div class="card-content">
+            <h3>Acerca de Pet Lovers</h3>
+            <p>Pet Lovers es una comunidad dedicada al bienestar y cuidado de las mascotas. Nuestro objetivo es brindar un espacio donde los amantes de los animales puedan compartir, aprender y apoyarse mutuamente.</p>
+            <button id="close-card-btn" class="btn">Cerrar</button>
+        </div>
+    </div>
+    <nav>
+        <div class="nav_logo">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3047/3047886.png" width="50" height="50"
+                    alt="logo"></a>
+        </div>
+
+        <ul class="nav_links">
+            <li class="link"><a href="index.html">Inicio</a></li>
+            <li class="link"><a href="Noticias.html">Noticias</a></li>
+            <li class="link"><a href="#" id="about-link">Acerca de</a></li>
+            <li class="link"><a href="Contacto.html">Contacto</a></li>
+            <li class="link"><a href="Comunidad.html">Comunidad</a></li>
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="card text-center">
+        <img src="imagenes/Leo.jpg" class="d-block w-100 carousel-image" alt="Imagen de ejemplo">
+        <div class="card-body">
+            <h1 class="card-title">Leo y el Mycooplasma</h1>
+            <p class="card-text tex">Mycoplasma
+
+                El Mycoplasma en gatos es una enfermedad provocada por una bacteria parasitaria que afecta a gatos, perros, animales de granja e incluso a humanos.
+
+                Estas bacterias son comunes en diversos entornos y suelen ser comensales, es decir, conviven sin causar problemas en la mayoría de los animales sanos.
+
+                Sin embargo, en aquellos con sistemas inmunitarios debilitados, ya sean muy jóvenes, ancianos o con trastornos inmunológicos, la infección puede causar anemia severa y otros síntomas de infección.
+
+                Los síntomas más comunes de la infección por mycoplasma en gatos incluyen problemas respiratorios como bronquitis y neumonía, aunque también pueden manifestarse infecciones en otras partes del cuerpo.
+
+                El caso de Mycoplasma en gatos suele ser muy grave y mortal, como el caso de Leonardo quien fue portador de ello debido a la plaga de pulgas y garrapatas que suelen tener los gatos y al no ser tratados se debilitan a tal punto de llegar a no comer ni levantarse.
+
+                No existe un tratamiento o protocolo único que se considere consistentemente efectivo para tratar la infección por micoplasma. Los tratamientos varían según la gravedad de los síntomas y la ubicación de la infección en el cuerpo del gato.
+
+                Los antibióticos son la opción más común de tratamiento, aunque el tipo de antimicrobiano al que la bacteria es susceptible puede variar entre casos.</p>
+            
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <a href="Noticias.html" class="btn btn-primary">Regresar</a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

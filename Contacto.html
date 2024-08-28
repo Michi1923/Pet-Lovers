@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="C:\Users\Michelle\Desktop\Pet Lovers\imagenes\paw_3736794.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="path/to/your/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./card.css">    
+</head>
+<body>
+    <nav>
+        <div class="nav_logo">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3047/3047886.png" width="50" height="50" alt="logo"></a>
+        </div>
+
+        <ul class="nav_links">
+            <li class="link"><a href="index.html">Inicio</a></li>
+            <li class="link"><a href="Noticias.html">Noticias</a></li>
+            <li class="link"><a href="#" id="about-link">Acerca de</a></li>
+            <li class="link"><a href="Contacto.html">Contacto</a></li>
+            <li class="link"><a href="Comunidad.html">Comunidad</a></li>
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+        </ul>
+    </nav>
+
+    <div id="about-card" class="about-card hidden">
+        <div class="card-content">
+            <h3>Acerca de Pet Lovers</h3>
+            <p>Pet Lovers es una comunidad dedicada al bienestar y cuidado de las mascotas. Nuestro objetivo es brindar un espacio donde los amantes de los animales puedan compartir, aprender y apoyarse mutuamente.</p>
+            <button id="close-card-btn" class="btn">Cerrar</button>
+        </div>
+    </div>
+    <section class="Contactos" id="Contactos">
+        <h2 class="section_header">Contactos</h2>
+        <div class="row">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.051314385234!2d-88.44162584999995!3d13.34708415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7b382c95eef94f%3A0xc7e97e4b010c7348!2sBarrio%20La%20Merced%2C%20Usulut%C3%A1n!5e0!3m2!1ses-419!2ssv!4v1724424839010!5m2!1ses-419!2ssv"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form action="https://formsubmit.co/fernando.ramos.2378@gmail.com" method="POST" class="form-contact form-group">
+                        <div class="row">
+                            <div class="col-sm-12 py-2">
+                                <label for="name" class="fg-grey">Nombre</label>
+                                <input type="text" class="form-control" name="Name" required id="name" placeholder="Nombre">
+                            </div>
+                            <div class="col-sm-12 py-2">
+                                <label for="email" class="fg-grey">Correo</label>
+                                <input type="email" class="form-control" name="Email" required id="email" placeholder="Correo">
+                            </div>
+                            <div class="col-12 py-2">
+                                <label for="subject" class="fg-grey">Asunto</label>
+                                <input type="text" class="form-control" name="_subject" required id="subject" placeholder="Asunto">
+                            </div>
+                            <div class="col-12 py-2">
+                                <label for="message" class="fg-grey">Mensaje</label>
+                                <textarea id="message" rows="8" name="Message" class="form-control" required placeholder="Escribe un mensaje..."></textarea>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <button type="submit" class="btn btn-transparent px-5">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+            </body>
+<script src="script.js"></script>
+<script src="./scrip2.js"></script>
+</html>

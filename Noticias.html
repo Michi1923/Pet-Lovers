@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="C:\Users\Michelle\Desktop\Pet Lovers\imagenes\paw_3736794.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav_logo">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3047/3047886.png" width="50" height="50" alt="logo"></a>
+        </div>
+
+        <ul class="nav_links">
+            <li class="link"><a href="index.html">Inicio</a></li>
+            <li class="link"><a href="Noticias.html">Noticias</a></li>
+            <li class="link"><a href="#" id="about-link">Acerca de</a></li>
+            <li class="link"><a href="Contacto.html">Contacto</a></li>
+            <li class="link"><a href="Comunidad.html">Comunidad</a></li>
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+        </ul>
+    </nav>
+
+    <div id="about-card" class="about-card hidden">
+        <div class="card-content">
+            <h3>Acerca de Pet Lovers</h3>
+            <p>Pet Lovers es una comunidad dedicada al bienestar y cuidado de las mascotas. Nuestro objetivo es brindar un espacio donde los amantes de los animales puedan compartir, aprender y apoyarse mutuamente.</p>
+            <button id="close-card-btn" class="btn">Cerrar</button>
+        </div>
+    </div>
+
+    <section class="section_container explore_container">
+        <div class="explore_container">
+            <h2 class="section_header">Noticias</h2>
+        </div>
+    
+        <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/Kira.jpg" class="d-block w-100 carousel-image" alt="Kira">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>xx Septiembre, 2018 | Kira</h5>
+                        <p>Ella es Kira, ella de pequeña estaba bastante mal por las pulgas y garrapatas pero se le dió tratamiento a tiempo y ahora 4 años después es una perrita feliz y una gran cazadora de ratones</p>
+                        <a href="kira.html" class="btn btn-primary">Leer Más...</a>
+                    </div>
+                </div>
+        
+                <div class="carousel-item">
+                    <img src="imagenes/Canela.jpg" class="d-block w-100 carousel-image" alt="Canela">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>10 Abril, 2015 | Canela</h5>
+                        <p>Ella es Canela, una perrita que debido a que el dueño de los perros que son sus progenitores no podía tener más perros decido regalarlos, en total eran 6 entre ellos canela que fue la última en ser adoptada por una familia</p>
+                    </div>
+                </div>
+        
+                <div class="carousel-item">
+                    <img src="imagenes/Loki.jpg" class="d-block w-100 carousel-image" alt="Loki">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>xx Septiembre, 2018 | Loki</h5>
+                        <p>El es Loki, un perrito muy travieso y juguetón pero también muy valiente y un guerrero ya que cuando tenía 4 meses mordió un sapo el cual le tiró leche en el ocico y estaba a punto de morir envenado pero fue tratado a tiempo y 3 años después sigue vivito y coleando</p>
+                        <a href="loki.html" class="btn btn-primary">Leer Más...</a>
+                    </div>
+                </div>
+        
+                <div class="carousel-item">
+                    <img src="imagenes/Coronel.jpg" class="d-block w-100 carousel-image" alt="Coronel">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>xx Septiembre, 2018 | Coronel</h5>
+                        <p>Este amiguito se llama Coronel, es un gato muy tranquilo pero a la vez algo gruñón si no le gusta lo que están haciendo con él, este amiguito tiene 1 año de edad.</p>
+                        <a href="coronel.html" class="btn btn-primary">Leer Más...</a>
+                    </div>
+                </div>
+
+                <!-- Nuevo elemento del carrusel -->
+                <div class="carousel-item">
+                    <img src="imagenes/Negrito.jpg" class="d-block w-100 carousel-image" alt="Thor">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Negrito</h5>
+                        <p>Él es Negrito, un perrito que enfrentó un momento crítico cuando sufrió una convulsión por estrés. Gracias a una rápida intervención veterinaria y al cuidado adecuado, superó el problema y hoy vive feliz y saludable.</p>
+                        <a href="negrito.html" class="btn btn-primary">Leer Más...</a>
+                    </div>
+                </div>
+
+                <!-- Otro nuevo elemento del carrusel -->
+                <div class="carousel-item">
+                    <img src="imagenes/leo2.jpg" class="d-block w-100 carousel-image" alt="Bella">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5> Leo</h5>
+                        <p>Un gatito que lucho una batalla que termino perdiendo contra el Mycoplasma</p>
+                        <a href="Leo.html" class="btn btn-primary">Leer Más...</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

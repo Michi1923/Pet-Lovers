@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="C:\Users\Michelle\Pictures\Pet\imagenes\paw_3736794.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Pet Lovers</title>
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav_logo">
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/3047/3047886.png"
+            width="50"
+            height="50"
+            alt="logo"
+        /></a>
+      </div>
+
+      <ul class="nav_links">
+        <li class="link"><a href="index.html">Inicio</a></li>
+        <li class="link"><a href="Noticias.html">Noticias</a></li>
+        <li class="link"><a href="#" id="about-link">Acerca de</a></li>
+        <li class="link"><a href="Contacto.html">Contacto</a></li>
+        <li class="link"><a href="Comunidad.html">Comunidad</a></li>
+        <div class="icons">
+          <div class="fas fa-search" id="search-btn"></div>
+          <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+      </ul>
+    </nav>
+
+    <header class="section_container header_container">
+      <div class="header_container">
+        <span class="bg_blur"></span>
+        <span class="bg_blur header_blur"></span>
+        <div style="text-align: justify; margin-left: auto"></div>
+        <h1><span>UNA CROQUETA </span>UNA VIDA MEJOR</h1>
+        <div style="text-align: justify; margin-left: auto"></div>
+        <button class="btn">Empezar</button>
+      </div>
+      <div class="header_image">
+        <img
+          src="imagenes/icono.png"
+          alt="header"
+        />
+      </div>
+    </header>
+    <div id="about-card" class="about-card hidden">
+      <div class="card-content">
+        <h3>Acerca de Pet Lovers</h3>
+        <p>
+          Pet Lovers es una comunidad dedicada al bienestar y cuidado de las
+          mascotas. Nuestro objetivo es brindar un espacio donde los amantes de
+          los animales puedan compartir, aprender y apoyarse mutuamente.
+        </p>
+        <button id="close-card-btn" class="btn">Cerrar</button>
+      </div>
+    </div>
+
+    <section class="section_container explore_container">
+      <div class="explore_container">
+        <h2 class="section_header">Noticias</h2>
+        <div class="explore_nav" style="float: right">
+          <span><i class="ri-arrow-left-line"></i></span>
+          <span><i class="ri-arrow-right-line"></i></span>
+        </div>
+      </div>
+      <div class="explore_grid">
+        <div class="explore_card">
+          <span><i class="ri-boxing-fill"></i></span>
+          <h4>
+            Diputados aprueban la "Ley Especial de Protección y Bienestar
+            Animal"
+          </h4>
+          <p>
+            Se busca beneficiar el trabajo de rescatistas y aquellos grupos en
+            su labor para el cuido y protección de los animales.
+          </p>
+          <a
+            href="https://www.elsalvadortimes.com/articulo/politicos/diputados-aprueban-ley/20220126091449083643.html"
+            >Ver Noticia <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
+
+        <div class="explore_card">
+          <span><i class="ri-heart-pulse-fill"></i></span>
+          <h4>
+            Unos 200 perros deambulan por las calles de Concepción de Ataco
+          </h4>
+          <p>
+            Algunos animales de compañía son maltratados por personas; pero
+            también se han reportado que estos han mordido a adultos y menores
+            en Concepción de Ataco, Ahuachapán Centro
+          </p>
+          <a
+            href="https://www.elsalvador.com/noticias/nacional/perros-ataques-de-malos-tratos-a-los-animales-ley-contra-el-maltrato-animal-concepcion-ataco-ahuachapan-centro-alcaldia-municipal-alcaldias-/1157575/2024/"
+            >Ver Noticia <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
+
+        <div class="explore_card">
+          <span><i class="ri-run-fill"></i></span>
+          <h4>IBA ayuda a más de 600 mascotas afectadas por las lluvias</h4>
+          <p>
+            IBA ha beneficiado a más de 600 mascotas (perros y gatos) con la
+            entrega de más de 8,000 libras de alimento a diversos refugios del
+            país afectados por las recientes lluvias.
+          </p>
+          <a
+            href="https://www.iba.gob.sv/2024/06/21/instituto-de-bienestar-animal-iba-ayuda-a-mas-de-600-mascotas-afectadas-por-las-lluvias/"
+            >Ver Noticias <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
+
+        <div class="explore_card">
+          <span><i class="ri-shopping-basket-fill"></i></span>
+          <h4>
+            Una segunda oportunidad para los animales sin hogar en El Salvador
+          </h4>
+          <p>
+            Estadísticamente, los perros y gatos son los animales que más
+            abandono sufren a escala mundial, y año con año la cifra va en
+            aumento.
+          </p>
+          <a
+            href="https://diarioelsalvador.com/una-segunda-oportunidad-para-los-animales-sin-hogar/553630/"
+            >Ver Noticias <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>

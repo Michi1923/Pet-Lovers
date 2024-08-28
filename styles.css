@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --primary-color: #000000;
+    --primary-color-light: #0c0d0c;
+    --primary-color-extra-light: #0c090d;
+    --secundary-color: #7df704;
+    --secundary-color-dark: #0cba0c;
+    --text-light: #d1d5db;
+    --white: #ffffff;
+    --max-width: 1200px;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section_container{
+    max-width: var(--max-width);
+    margin: center;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.section_header{
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+}
+
+.section_subheader{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.btn{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--secundary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: var(--secundary-color-dark);
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bg_blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px var(--secundary-color);
+    z-index: -1;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav_logo{
+    max-width: 150px;
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: var(--white);
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--secundary-color);
+    transition: .3s;
+}
+
+.link a:hover::after{
+    width: 50%;
+}
+
+.header_container{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.header_container::before{
+    content: "Pet Lovers";
+    position: absolute;
+    bottom: 5rem;
+    right: 20rem;
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: 7rem;
+    color: var(--white);
+    opacity: 0.05;
+    z-index: -1;
+}
+
+.header_blur{
+    bottom: 5rem;
+    right: 0;
+}
+
+.header_container h4{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secundary-color);
+}
+
+.header_container h1{
+    margin-bottom: 1rem;
+    font-size: 4.3rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: var(--white);
+}
+
+.header_container h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--white);
+} 
+
+.header_container p{
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.header_image{
+    position: relative;
+}
+
+.header_image::before{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: var(--secundary-color);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.header_image img{
+    max-width: 350px;
+    margin: auto;
+}
+
+.explore_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.explore_nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.explore_nav span{
+    padding: 0 6px;
+    font-size: 1.5rem;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.explore_nav span:hover{
+    color: var(--secundary-color);
+    border-color: var(--secundary-color);
+}
+
+.explore_grid{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.explore_card{
+    padding: 1rem;
+    background-color: var(--primary-color-light);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.explore_card:hover{
+    background-color: var(--primary-color-extra-light);
+    border-color: var(--secundary-color);
+}
+
+.explore_card span{
+    display: inline-block;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: var(--white);
+    background-color: var(--secundary-color-dark);
+    border-radius: 5px;
+}
+
+.explore_card h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.explore_card p{
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.explore_card a{
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.explore_card a:hover{
+    color: var(--secundary-color);
+}
+
+.Contactos{
+    margin-bottom: 1rem;
+    font-size: 4.3rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: var(--white);
+}
+
+.Contactos .row{
+    display: flex;
+    align-items: center;
+    background: var(#000000);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.Contactos .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Contactos .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.Contactos .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
+.about-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color-light);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 80%;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-content h3 {
+    margin-bottom: 1rem;
+    color: var(--secundary-color-dark);
+}
+
+.card-content p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.carousel-image {
+    height: 500px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor sin distorsión */
+}
+/* Estilo general del formulario */
+.form-contact {
+    background-color: #282828; /* Color de fondo del formulario */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los campos del formulario */
+.form-contact .form-control {
+    background-color: #FAFAFA; /* Color de fondo de los campos */
+    border: 1px solid #393939;
+    color: #888888; /* Color del texto */
+    border-radius: 4px;
+    padding: 0.75rem;
+}
+
+/* Estilo del texto de los labels */
+.fg-grey {
+    color: #92bf24; /* Color de los labels */
+}
+
+/* Estilo del botón */
+.btn-transparent {
+    background-color: transparent;
+    border: 2px solid #92bf24; /* Color del borde del botón */
+    color: #92bf24; /* Color del texto del botón */
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo del botón en hover */
+.btn-transparent:hover {
+    background-color: #92bf24; /* Color de fondo al pasar el ratón */
+    color: #ffffff; /* Color del texto al pasar el ratón */
+}
+
+/* Estilo de los campos de texto y textarea */
+input.form-control, textarea.form-control {
+    border-radius: 4px; /* Redondear los bordes */
+    padding: 0.75rem; /* Ajustar el padding interno */
+}
+
+/* Asegura que el formulario esté centrado */
+.page-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa toda la altura del viewport */
+}
+
